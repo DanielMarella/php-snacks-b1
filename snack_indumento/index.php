@@ -13,11 +13,13 @@ class Indumento {
 
     public $marca;
     public $taglia;
+    public $materiale;
 
 
-    function __construct(String $marca, String $taglia){
+    function __construct(String $marca, String $taglia, String $materiale){
         $this->marca = $marca;
         $this->taglia = $taglia;
+        $this->materiale = $materiale;
     }
 
     public function getIndumento(){
@@ -25,7 +27,7 @@ class Indumento {
     }
 }
 
-    $maglietta = new Indumento('levis', 'L');
+    $maglietta = new Indumento('levis', 'L', 'piombo');
     var_dump($maglietta);
 
 ?>
